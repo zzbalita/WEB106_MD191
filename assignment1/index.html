@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai lần cà phê</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image" href="image/logo.png">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo"><i class='bx bxs-coffee'></i></a>
+            <div class="loo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <bx class="bx-menu" id="menu-icon"></bx>
+            <ul class="navbar">
+                <a href="#gioithieu" class="gioitieu">GIỚI THIỆU</a>
+                <a href="#thucdon">THỰC ĐƠN</a>
+                <a href="#tintuc">TIN TỨC</a>
+                <a href="#media">MEDIA</a>
+                <a href="#vechungtoi" class="vechungtoi">VỀ CHÚNG TÔI</a>
+            </ul>
+            <div class="tim kiem">
+                <input type="search" placeholder="Tìm kiếm">
+                <button onclick="getLocation()">Vị trí</button>
+                <p id="demo"></p>
+            </div>
+        </header>
+
+        <section id="gioithieu">
+            <div class="header" id="id1">
+                <div class="banner">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <div class="slide first">
+                            <img src="image/img1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/img2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/img3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/img4.png" alt="">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="thucdon">
+            <div class="service" id="id2">
+                <div class="service-row">
+                    <div class="item" onclick="showDetails('anhsp1.jpg', 'Cà phê đen', 'Cà phê đen được pha chế từ cà phê chất lượng cao...')">
+                        <img src="image/anhsp1.jpg" alt="">
+                        <span class="item-des">Cà phê đen</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp2.jpg', 'Cà phê sữa', 'Cà phê sữa có hương vị thơm ngon, hòa quyện giữa cà phê và sữa...')">
+                        <img src="image/anhsp2.jpg" alt="">
+                        <span class="item-des">Cà phê sữa</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp3.jpg', 'Phindi choco', 'Đắm chìm trong hương thơm của cà phê kết hợp với sô cô la...')">
+                        <img src="image/anhsp3.jpg" alt="">
+                        <span class="item-des">Phindi choco</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp4.jpg', 'Phindi thạch', 'Phindi thạch tuyệt vời với hòa quyện giữa sự mát lạnh của thạch và độ đậm đà của cà phê...')">
+                        <img src="image/anhsp4.jpg" alt="">
+                        <span class="item-des">Phindi thạch</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp5.jpg', 'Phindi kem', 'Sự hòa quyện tuyệt vời giữa cà phê và kem tạo nên hương vị đặc trưng và thơm ngon...')">
+                        <img src="image/anhsp5.jpg" alt="">
+                        <span class="item-des">Phindi kem</span>
+                    </div>
+                </div>
+                <div class="service-row">
+                    <div class="item" onclick="showDetails('anhsp6.jpg', 'Phin đen đá', 'Phin đen đá, đặc trưng với hương vị đậm đà, ngon mắt...')">
+                        <img src="image/anhsp6.jpg" alt="">
+                        <span class="item-des">Phin đen đá</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp7.jpg', 'Bạc xỉu', 'Bạc xỉu là sự kết hợp tinh tế giữa cà phê, sữa và đường...')">
+                        <img src="image/anhsp7.jpg" alt="">
+                        <span class="item-des">Bạc xỉu</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp8.jpg', 'MACCHIATO', 'MACCHIATO - một sự kết hợp hài hòa giữa cà phê và sữa, tạo nên hương vị đặc trưng...')">
+                        <img src="image/anhsp8.jpg" alt="">
+                        <span class="item-des">MACCHIATO</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp9.jpg', 'CAPUCHINO', 'CAPUCHINO với lớp bọt sữa mịn màng, hòa quyện với cà phê đậm đà...')">
+                        <img src="image/anhsp9.jpg" alt="">
+                        <span class="item-des">CAPUCHINO</span>
+                    </div>
+                    <div class="item" onclick="showDetails('anhsp10.jpg', 'AMERICANO', 'AMERICANO - sự hòa quyện đặc biệt giữa cà phê và nước, tạo nên hương vị độc đáo...')">
+                        <img src="image/anhsp10.jpg" alt="">
+                        <span class="item-des">AMERICANO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="tintuc">
+            <img src="image/img7.png" alt="">
+            <div class="about-text">
+                <span>Sản phẩm</span>
+                <p>CÀ PHÊ ESPRESSO CỦA CHÚNG TÔI, LATTE CỦA BẠN
+                Cà phê espresso đậm vị và bốc hơi sữa - ngon tuyệt hảo khi thưởng thức riêng hay khi thêm đường.</p>
+                <a href="#" class="btn"> Mua ngay <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </section>
+
+        <section class="about1" id="tintuc">
+            <div class="about-text1">
+                <span>CƠ HỘI</span>
+                <p>
+                Không chỉ là nhân viên, mà còn là cộng sự.</p>
+                <a href="#" class="btn"> Tham gia ngay <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="image/img8.png" alt="">
+        </section>
+
+        <section id="media">
+            <div class="slider-3">
+                <div class="cacvideo">
+                    <div>
+                        <div class="video-1">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M5K0hUNfbEQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="video-2">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/peSAOGieUlU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="video-3">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hbJDipvf9wU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vechungtoi">
+            <div class="about-us">
+                <h2>VỀ CHÚNG TÔI</h2>
+                <p>
+                    Chúng tôi tự hào mang đến cho bạn những trải nghiệm cà phê tuyệt vời nhất. Đến với Hai lần cà phê, bạn không chỉ đơn thuần là người thưởng thức cà phê mà còn là một phần của chúng tôi.
+                </p>
+                <div class="input-container">
+                    <label for="name">Họ tên:</label>
+                    <input type="text" id="name" name="ht">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="pass">
+                </div>
+                <div class="input-container">
+                    <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                    <input type="password" id="confirmPassword" name="confirm">
+                </div>
+                <div class="input-container">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="input-container">
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="nd"></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="oldPassword">Mật khẩu cũ: </label>
+                        <input type="password" id="oldPassword" name="passold">
+                    </div>
+                    <input type="submit" value="Đăng ký" onclick="validate()">
+                </div>
+            </section>
+
+        </div>
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+
+    </html>
