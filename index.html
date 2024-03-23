@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="icon" type="image" href="image/logo.png">
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -76,29 +78,29 @@
         <section id="thucdon">
             <div class="service" id="id2">
                 <div class="service-row">
-                    <div class="item" onclick="showDetails('anhsp1.jpg', 'Cà phê đen', 'Cà phê đen được pha chế từ cà phê chất lượng cao...')">
+                    <div class="item">
                         <img src="image/anhsp1.jpg" alt="">
                         <span class="item-des">Cà phê đen</span>
                     </div>
-                    <div class="item" onclick="showDetails('anhsp2.jpg', 'Cà phê sữa', 'Cà phê sữa có hương vị thơm ngon, hòa quyện giữa cà phê và sữa...')">
+                    <div class="item">
                         <img src="image/anhsp2.jpg" alt="">
                         <span class="item-des">Cà phê sữa</span>
                     </div>
-                    <div class="item" onclick="showDetails('anhsp3.jpg', 'Phindi choco', 'Đắm chìm trong hương thơm của cà phê kết hợp với sô cô la...')">
+                    <div class="item">
                         <img src="image/anhsp3.jpg" alt="">
                         <span class="item-des">Phindi choco</span>
                     </div>
-                    <div class="item" onclick="showDetails('anhsp4.jpg', 'Phindi thạch', 'Phindi thạch tuyệt vời với hòa quyện giữa sự mát lạnh của thạch và độ đậm đà của cà phê...')">
+                    <div class="item">
                         <img src="image/anhsp4.jpg" alt="">
                         <span class="item-des">Phindi thạch</span>
                     </div>
-                    <div class="item" onclick="showDetails('anhsp5.jpg', 'Phindi kem', 'Sự hòa quyện tuyệt vời giữa cà phê và kem tạo nên hương vị đặc trưng và thơm ngon...')">
+                    <div class="item">
                         <img src="image/anhsp5.jpg" alt="">
                         <span class="item-des">Phindi kem</span>
                     </div>
                 </div>
                 <div class="service-row">
-                    <div class="item" onclick="showDetails('anhsp6.jpg', 'Phin đen đá', 'Phin đen đá, đặc trưng với hương vị đậm đà, ngon mắt...')">
+                    <div class="item" >
                         <img src="image/anhsp6.jpg" alt="">
                         <span class="item-des">Phin đen đá</span>
                     </div>
@@ -203,15 +205,14 @@
                 </div>
                 <div class="input-container">
                     <label for="oldPassword">Mật khẩu cũ: </label>
-                        <input type="password" id="oldPassword" name="passold">
-                    </div>
-                    <input type="submit" value="Đăng ký" onclick="validate()">
+                    <input type="password" id="oldPassword" name="passold">
                 </div>
-            </section>
+                <input type="submit" value="Đăng ký" onclick="validate()">
+            </div>
+        </section>
 
-        </div>
-        <script src="index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </body>
+    </div>
 
-    </html>
+</body>
+
+</html>
