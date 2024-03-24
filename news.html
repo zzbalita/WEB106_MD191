@@ -15,41 +15,120 @@
 </head>
 <body>
 	<div class=wrapper>
-		<section id="vechungtoi">
-			<div class="about-us">
-				<h2>VỀ CHÚNG TÔI</h2>
+		<header>
+            <a href="#" class="logo"><i class="fa-solid fa-mug-hot"></i></a>
+            <div class="loo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <bx class="bx-menu" id="menu-icon"></bx>
+            <ul class="navbar">
+                <a href="index.html" class="gioitieu">GIỚI THIỆU</a>
+                <a href="#thucdon">THỰC ĐƠN</a>
+                <a href="news.html">TIN TỨC</a>
+                <a href="#media">MEDIA</a>
+                <a href="contact.html" class="vechungtoi">VỀ CHÚNG TÔI</a>
+            </ul>
+            <div class="tim kiem">
+                <input type="search" placeholder="Tìm kiếm">
+                <button onclick="getLocation()">Vị trí</button>
+                <p id="demo"></p>
+            </div>
+        </header>
+		<section id="thucdon">
+			<div class="service" id="id2">
+				<div class="service-row">
+					<div class="item">
+						<img src="image/anhsp1.jpg" alt="">
+						<span class="item-des">Cà phê đen</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp2.jpg" alt="">
+						<span class="item-des">Cà phê sữa</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp3.jpg" alt="">
+						<span class="item-des">Phindi choco</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp4.jpg" alt="">
+						<span class="item-des">Phindi thạch</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp5.jpg" alt="">
+						<span class="item-des">Phindi kem</span>
+					</div>
+				</div>
+				<div class="service-row">
+					<div class="item">
+						<img src="image/anhsp6.jpg" alt="">
+						<span class="item-des">Phin đen đá</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp7.jpg" alt="">
+						<span class="item-des">Bạc xỉu</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp8.jpg" alt="">
+						<span class="item-des">MACCHIATO</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp9.jpg" alt="">
+						<span class="item-des">CAPUCHINO</span>
+					</div>
+					<div class="item">
+						<img src="image/anhsp10.jpg" alt="">
+						<span class="item-des">AMERICANO</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="tintuc">
+			<img src="image/img7.png" alt="">
+			<div class="about-text">
+				<span>Sản phẩm</span>
+				<p>CÀ PHÊ ESPRESSO CỦA CHÚNG TÔI, LATTE CỦA BẠN
+				Cà phê espresso đậm vị và bốc hơi sữa - ngon tuyệt hảo khi thưởng thức riêng hay khi thêm đường.</p>
+				<a href="#" class="btn"> Mua ngay <i class='bx bxs-right-arrow-alt'></i></a>
+			</div>
+		</section>
+
+		<section class="about1" id="tintuc">
+			<div class="about-text1">
+				<span>CƠ HỘI</span>
 				<p>
-					Chúng tôi tự hào mang đến cho bạn những trải nghiệm cà phê tuyệt vời nhất. Đến với Hai lần cà phê, bạn không chỉ đơn thuần là người thưởng thức cà phê mà còn là một phần của chúng tôi.
-				</p>
-				<div class="input-container">
-					<label for="name">Họ tên:</label>
-					<input type="text" id="name" name="ht">
+				Không chỉ là nhân viên, mà còn là cộng sự.</p>
+				<a href="#" class="btn"> Tham gia ngay <i class='bx bxs-right-arrow-alt'></i></a>
+			</div>
+			<img src="image/img8.png" alt="">
+		</section>
+
+		<section id="media">
+			<div class="slider-3">
+				<div class="cacvideo">
+					<div>
+						<div class="video-1">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/M5K0hUNfbEQ"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						</div>
+					</div>
+					<div>
+						<div class="video-2">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/peSAOGieUlU"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						</div>
+						<div class="video-3">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hbJDipvf9wU"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
-				<div class="input-container">
-					<label for="email">Email:</label>
-					<input type="text" id="email" name="email">
-				</div>
-				<div class="input-container">
-					<label for="password">Mật khẩu:</label>
-					<input type="password" id="password" name="pass">
-				</div>
-				<div class="input-container">
-					<label for="confirmPassword">Xác nhận mật khẩu:</label>
-					<input type="password" id="confirmPassword" name="confirm">
-				</div>
-				<div class="input-container">
-					<label for="phone">Số điện thoại:</label>
-					<input type="text" id="phone" name="phone">
-				</div>
-				<div class="input-container">
-					<label for="message">Nội dung:</label>
-					<textarea id="message" name="nd"></textarea>
-				</div>
-				<div class="input-container">
-					<label for="oldPassword">Mật khẩu cũ: </label>
-					<input type="password" id="oldPassword" name="passold">
-				</div>
-				<input type="submit" value="Đăng ký" onclick="validate()">
 			</div>
 		</section>
 	</div>
