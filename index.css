@@ -519,7 +519,7 @@ h1 {
 
 .about-us {
     max-width: 800px;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
     padding: 20px;
 }
@@ -578,7 +578,9 @@ input[type="submit"]:hover {
   align-items: center; 
 }
 
-
+#gioithieu{
+  margin: 150px auto;
+}
 
 
 
